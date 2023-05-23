@@ -1,8 +1,10 @@
-package sqlite
+package sqlite_test
 
 import (
 	"sync"
 	"testing"
+
+	"github.com/cdvelop/sqlite"
 )
 
 func Test_GetNewID(t *testing.T) {
@@ -10,7 +12,7 @@ func Test_GetNewID(t *testing.T) {
 	wg := sync.WaitGroup{}
 	wg.Add(idRequired)
 
-	db := NewConnection("./test_files/", "test.db", false)
+	db := sqlite.NewConnection("./test_files", "test.db", false)
 
 	idObtained := make(map[string]int)
 	var esperar sync.Mutex

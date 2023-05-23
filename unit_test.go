@@ -1,4 +1,4 @@
-package sqlite
+package sqlite_test
 
 import (
 	"errors"
@@ -7,11 +7,12 @@ import (
 	"testing"
 
 	"github.com/cdvelop/objectdb"
+	"github.com/cdvelop/sqlite"
 )
 
 func Test_Sqlite(t *testing.T) {
 	//test.....
-	root := "./test_files/"
+	root := "./test_files"
 	db_name := "test.db"
 
 	full_path := root + db_name
@@ -24,7 +25,7 @@ func Test_Sqlite(t *testing.T) {
 		}
 	}
 
-	db_sqlite := NewConnection(root, db_name, false)
+	db_sqlite := sqlite.NewConnection(root, db_name, false)
 
 	db := objectdb.Get(db_sqlite)
 
