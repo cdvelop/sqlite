@@ -1,9 +1,6 @@
 package sqlite_test
 
 import (
-	"errors"
-	"log"
-	"os"
 	"testing"
 
 	"github.com/cdvelop/objectdb"
@@ -15,17 +12,9 @@ func Test_Sqlite(t *testing.T) {
 	root := "./test_files"
 	db_name := "test.db"
 
-	full_path := root + db_name
-
-	//eliminar base de datos
-	if _, err := os.Stat(full_path); !errors.Is(err, os.ErrNotExist) {
-		if err := os.Remove(full_path); err != nil {
-			log.Printf("ERROR: %v", err)
-			t.Fatal()
-		}
-	}
-
 	db_sqlite := sqlite.NewConnection(root, db_name, false)
+
+	db_sqlite.DeleteDataBase()
 
 	db := objectdb.Get(db_sqlite)
 

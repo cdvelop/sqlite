@@ -13,10 +13,6 @@ func (d *db) RestoreDataBase(file_name string) bool {
 	return false
 }
 
-func (d *db) DeleteDataBase() {
-
-}
-
 func (d *db) DataBaseMaintenance() {
 
 }
