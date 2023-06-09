@@ -3,19 +3,23 @@ package sqlite
 import "fmt"
 
 // SQLParameters string  //ej: postgres: "$" sqlite "?",
-func (d *db) PlaceHolders(index ...uint8) string {
+func (db) PlaceHolders(index ...uint8) string {
 	return `?`
 }
 
 //SetListSyntax "%v=?", k
-func (d *db) SetListSyntax(key string, i byte, set *[]string) {
+func (db) SetListSyntax(key string, i byte, set *[]string) {
 	*set = append(*set, fmt.Sprintf("%v=?", key))
 }
 
-func (d *db) TotalValuesSyntax(fields map[string]string) string {
+func (db) TotalValuesSyntax(fields map[string]string) string {
 	return "?"
 }
 
-func (d *db) MakeSqInsertSyntax(i *byte, setValue *[]string) {
+func (db) MakeSqInsertSyntax(i *byte, setValue *[]string) {
 	*setValue = append(*setValue, "?")
+}
+
+func (db) DropTable() string {
+	return "DROP TABLE IF EXISTS %v"
 }
