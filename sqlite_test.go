@@ -13,10 +13,6 @@ func Test_Sqlite(t *testing.T) {
 
 	db := sqlite.NewConnection(root, db_name, false)
 
-	// db.DeleteDataBase()
-
-	// db.Open()
-
 	db.TestCrudStart(t)
 
 }
