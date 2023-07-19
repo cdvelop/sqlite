@@ -10,7 +10,7 @@ import (
 )
 
 // root_folder ej: "./app_files" db_name ej: mi_proyecto.db min 4 caracteres
-func NewConnection(root_folder, db_name string, mode_only_memory bool, tables ...model.Object) *objectdb.Connection {
+func NewConnection(root_folder, db_name string, mode_only_memory bool, tables ...*model.Object) *objectdb.Connection {
 
 	if db_name == "" || len(db_name) < 4 {
 		showErrorAndExit("NOMBRE BASE DE DATOS INCORRECTO")
@@ -26,8 +26,9 @@ func NewConnection(root_folder, db_name string, mode_only_memory bool, tables ..
 	// chequear tablas base de datos
 	for _, t := range tables {
 		if !dba.TableExist(t.Name, db) {
-			if !dbtools.CreateOneTABLE(db, t) {
-				showErrorAndExit(fmt.Sprintf("no se logro crear tabla: %v", t.Name))
+			err := dbtools.CreateOneTABLE(db, t)
+			if err != nil {
+				showErrorAndExit(fmt.Sprintf("no se logro crear tabla: %v\n%v", t.Name, err))
 			}
 		}
 	}
