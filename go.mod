@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/cdvelop/dbtools v0.0.24
 	github.com/cdvelop/model v0.0.34
-	github.com/cdvelop/objectdb v0.0.31
+	github.com/cdvelop/objectdb v0.0.32
 	github.com/mattn/go-sqlite3 v1.14.17
 )
 
