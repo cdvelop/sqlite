@@ -1,9 +1,6 @@
 package sqlite
 
 import (
-	"fmt"
-
-	"github.com/cdvelop/dbtools"
 	"github.com/cdvelop/model"
 	"github.com/cdvelop/objectdb"
 	_ "github.com/mattn/go-sqlite3"
@@ -24,13 +21,10 @@ func NewConnection(root_folder, db_name string, mode_only_memory bool, tables ..
 	db := objectdb.Get(&dba)
 
 	// chequear tablas base de datos
-	for _, t := range tables {
-		if !dba.TableExist(t.Name, db) {
-			err := dbtools.CreateOneTABLE(db, t)
-			if err != nil {
-				showErrorAndExit(fmt.Sprintf("no se logro crear tabla: %v\n%v", t.Name, err))
-			}
-		}
+	err := db.CreateTablesInDB(tables...)
+	if err != nil {
+		showErrorAndExit(err.Error())
 	}
+
 	return db
 }

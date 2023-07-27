@@ -23,3 +23,7 @@ func (db) MakeSqInsertSyntax(i *byte, setValue *[]string) {
 func (db) DropTable() string {
 	return "DROP TABLE IF EXISTS %v"
 }
+
+func (db) SQLTableExist() string {
+	return "SELECT name FROM sqlite_master WHERE type='table' AND name=?"
+}
