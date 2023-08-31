@@ -3,7 +3,7 @@ module github.com/cdvelop/sqlite
 go 1.20
 
 require (
-	github.com/cdvelop/model v0.0.41
+	github.com/cdvelop/model v0.0.42
 	github.com/cdvelop/objectdb v0.0.38
 	github.com/mattn/go-sqlite3 v1.14.17
 )
@@ -11,8 +11,7 @@ require (
 require (
 	github.com/cdvelop/dbtools v0.0.25 // indirect
 	github.com/cdvelop/gotools v0.0.30 // indirect
-	github.com/cdvelop/input v0.0.21 // indirect
-	golang.org/x/text v0.11.0 // indirect
+	github.com/cdvelop/input v0.0.24 // indirect
 )
 
 replace github.com/cdvelop/objectdb => ../objectdb
