@@ -1,9 +1,7 @@
 github.com/cdvelop/gotools v0.0.42 h1:+QhfDR7Ctx7LM4ul/Fyq5GA6sSeKImPSBUchjPm8oVA=
 github.com/cdvelop/gotools v0.0.42/go.mod h1:O1qFUW4C7oKtPD9kR7smgJlDAtMicRKbjDsnyu7uNn8=
-github.com/cdvelop/timeserver v0.0.1 h1:QVwLAvuNGAokKsj71E2hOwe9KHpZ1p7MrzM1BfkAbrU=
-github.com/cdvelop/timeserver v0.0.1/go.mod h1:7ObvBHx3DZs5caAylI/0stDeh6mqCqTiJ+FbjLg96SE=
-github.com/cdvelop/unixid v0.0.2 h1:Pr1vXbgOOE4peGKbl0LBFVVzpl7spyqTVbJQhNdtCvw=
-github.com/cdvelop/unixid v0.0.2/go.mod h1:8UyrYiWsiSOYJKPA69NtTOKU/LCY+kzpKsNrHJkOZNc=
+github.com/cdvelop/unixid v0.0.5 h1:4Om/dk1cjwfvJqRWbsmG+cG/9oh/bTpUOTNSOhPg4+A=
+github.com/cdvelop/unixid v0.0.5/go.mod h1:zerzDRPdV50ABFjWjCHhtEFWtzZHY6TKD5XIreDuX74=
 github.com/mattn/go-sqlite3 v1.14.17 h1:mCRHCLDUBXgpKAqIKsaAaAsrAlbkeomtRFKXh2L6YIM=
 github.com/mattn/go-sqlite3 v1.14.17/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
 golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
