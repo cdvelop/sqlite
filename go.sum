@@ -1,7 +1,5 @@
-github.com/cdvelop/gotools v0.0.43 h1:6HEppsMtvWUINqvyv371wXli2bJAYXotG8GeiW5i8Pg=
-github.com/cdvelop/gotools v0.0.43/go.mod h1:MXj0A4f21pQX1bG+TcoNm6GSklYIi/2Az1O/CdzjAS8=
-github.com/cdvelop/unixid v0.0.5 h1:4Om/dk1cjwfvJqRWbsmG+cG/9oh/bTpUOTNSOhPg4+A=
-github.com/cdvelop/unixid v0.0.5/go.mod h1:zerzDRPdV50ABFjWjCHhtEFWtzZHY6TKD5XIreDuX74=
+github.com/cdvelop/gotools v0.0.48 h1:7JLKf3KAIqMJXk4ooMdRRtnusEWsmNZoVhBco2JiogA=
+github.com/cdvelop/gotools v0.0.48/go.mod h1:cyrmRqhqCTNCa2+J65BXogxKg0GAXCIKPRj2t6Sb4HU=
 github.com/mattn/go-sqlite3 v1.14.17 h1:mCRHCLDUBXgpKAqIKsaAaAsrAlbkeomtRFKXh2L6YIM=
 github.com/mattn/go-sqlite3 v1.14.17/go.mod h1:2eHXhiwb8IkHr+BDWZGa96P6+rkvnG63S2DGjv9HUNg=
 golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
