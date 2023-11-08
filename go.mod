@@ -3,7 +3,7 @@ module github.com/cdvelop/sqlite
 go 1.20
 
 require (
-	github.com/cdvelop/model v0.0.65
+	github.com/cdvelop/model v0.0.66
 	github.com/cdvelop/objectdb v0.0.73
 	github.com/mattn/go-sqlite3 v1.14.17
 )
