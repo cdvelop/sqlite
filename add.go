@@ -21,9 +21,9 @@ func NewConnection(root_folder, db_name string, mode_only_memory bool, tables ..
 	db := objectdb.Get(&dba)
 
 	// chequear tablas base de datos
-	db.CreateTablesInDB(tables, func(err error) {
-		if err != nil {
-			showErrorAndExit(err.Error())
+	db.CreateTablesInDB(tables, func(err string) {
+		if err != "" {
+			showErrorAndExit(err)
 		}
 	})
 
