@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/cdvelop/model v0.0.102
-	github.com/cdvelop/objectdb v0.0.103
+	github.com/cdvelop/objectdb v0.0.107
 	github.com/mattn/go-sqlite3 v1.14.19
 )
 
@@ -15,7 +15,7 @@ require (
 	github.com/cdvelop/strings v0.0.9 // indirect
 	github.com/cdvelop/timeserver v0.0.31 // indirect
 	github.com/cdvelop/timetools v0.0.32 // indirect
-	github.com/cdvelop/unixid v0.0.41 // indirect
+	github.com/cdvelop/unixid v0.0.44 // indirect
 )
 
 replace github.com/cdvelop/model => ../model
