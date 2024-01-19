@@ -11,6 +11,14 @@ func (d db) DataBaseName() string {
 
 // ConnectionString formato cadena de conexión
 func (d *db) ConnectionString() string {
+
+	if d.modeMemory {
+		return "file:" + d.dataBaseName + "?mode=memory&cache=shared"
+		// return `file::` + d.dataBaseName + `:?cache=shared`
+		// return `file::memory:?cache=shared`
+		// return ":memory:"
+	}
+
 	return d.rootFolder + d.dataBaseName
 }
 
