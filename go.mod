@@ -3,9 +3,9 @@ module github.com/cdvelop/sqlite
 go 1.20
 
 require (
-	github.com/cdvelop/model v0.0.120
-	github.com/cdvelop/objectdb v0.0.120
-	github.com/mattn/go-sqlite3 v1.14.19
+	github.com/cdvelop/model v0.0.123
+	github.com/cdvelop/objectdb v0.0.121
+	github.com/mattn/go-sqlite3 v1.14.20
 )
 
 require (
@@ -15,7 +15,7 @@ require (
 	github.com/cdvelop/strings v0.0.9 // indirect
 	github.com/cdvelop/timeserver v0.0.36 // indirect
 	github.com/cdvelop/timetools v0.0.42 // indirect
-	github.com/cdvelop/unixid v0.0.52 // indirect
+	github.com/cdvelop/unixid v0.0.53 // indirect
 )
 
 replace github.com/cdvelop/model => ../model
